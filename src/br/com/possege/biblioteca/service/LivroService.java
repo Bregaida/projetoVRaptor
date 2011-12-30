@@ -18,22 +18,18 @@ public class LivroService implements LivroServiceI{
 		}
 	}
 	
-	@Override
 	public void salva(Livro livro) {
 		livroDao.salva(livro);
 	}
 
-	@Override
 	public List<Livro> listaTodos() {
 		return livroDao.listaTodos();
 	}
 
-	@Override
 	public void remove(Livro livro) {
 		livroDao.remove(livro);
 	}
 
-	@Override
 	public Livro buscaPorId(Long id) {
 		return livroDao.buscaPorId(id);
 	}
